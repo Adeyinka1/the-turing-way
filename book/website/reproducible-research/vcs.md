@@ -82,3 +82,15 @@ Using a version control system, **changes made by different people can be tracke
 Using version control makes your research more transparent.
 Since all your actions are recorded, your studies become easier to reproduce and build upon.
 Moreover, version control hosting services such as {ref}`GitHub<cl-github-novice-motivation>`, GitLab and others provide a way to communicate and collaborate in a more structured way, such as in pull requests, code reviews, and issues.
+### Common pitfalls and how to avoid them
+
+- **Committing large files (e.g., datasets, binaries)**
+  - Use `.gitignore` or Git LFS for large files
+- **Committing generated outputs (e.g., figures, caches)**
+  - Keep only source code and scripts; regenerate outputs when needed
+- **Unclear commit messages**
+  - Use descriptive messages (e.g., “Fix data cleaning step for missing values”)
+- **Working directly on the main branch**
+  - Create feature branches for changes and use pull requests
+- **Not tracking environment changes**
+  - Update `requirements.txt` or `environment.yml` when dependencies change
